@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="poppins-light">
+  <nav class="fixed-icons">
+    <ul>
+      <div class="icon-box">
+        <li><a href="#home"><i class="fas fa-home" data-text="HOME"></i></a></li>
+        <li><a href="#about"><i class="fas fa-user" data-text="ABOUT"></i></a></li>
+        <li><a href="#project"><i class="fas fa-network-wired" data-text="PROJECTS"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope" data-text="CONTACT"></i></a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <header>
+    <p class="header-title">Unleashing Innovation: A Full Stack Tale of Code and Creativity</p>
+  </header>
+
+  <section id="home">
+    <div class="name">
+      <p id="role">Full Stack Developer</p>
+      <p id="intro"><span class="intro-text">Hello, I'm</span></p>
+      <div class="typewriter-container">
+        <p class="typewriter">Jitender Kumar M</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="circular-image" src="profile.jpg" alt="Profile Picture">
+    </div>
+    <a href="Jitender Kumar M_Resume.pdf" class="download-resume" download="Jitender_Kumar_Resume.pdf">Download
+      Resume</a>
+  </section>
+
+
+  <section id="about">
+    <h2 style="margin-bottom: 20px;margin-right: 84%;">About Me</h2>
+    <div class="about-grid">
+      <div class="about-content" id="popup-container">
+        <p class="popup-text">&#x2756; I am a versatile Full Stack Developer proficient in both frontend and backend
+          technologies.</p>
+        <div>
+          <p class="popup-text">&#x2756; With expertise in MERN stack, Java concepts, and a strong foundation in data
+            structures and algorithms.</p>
+          <p class="popup-text">&#x2756; I've solved 50 + LeetCode problems and Gfg Problems, alongside adept skills in
+            Git, GitHub,
+            and Microsoft Office suite.</p>
+        </div>
+      </div>
+      <div class="tab">
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Front End</span><br>Html , CSS , JavaScript , React JS , Bootstrap</li>
+            <li><span>Programming Language</span><br>Java OOPS Concept</li>
+            <li><span>MERN Stack</span><br>MongoDB, Express JS, React JS, Node JS</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Internship on Web Development</span><br>Developing Websites (Both FrontEnd and BackEnd)</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2020-2021</span><br>Higher Secondary at Allwin Matric School</li>
+            <li><span>2021-2025</span><br>B.E - CSE at UCE,BIT Campus,Anna University,Trichy</li>
+            <li><span>2024</span><br>Full Stack Development(MERN Stack) at Guvi</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="project">
+    <div class="projects">
+      <div class="container">
+        <h2 style="margin-bottom: 20px;margin-left: 12%;">My Projects</h2>
+        <div class="project-list">
+
+          <div class="project" id="first">
+            <img src="./assets/project1.png" alt="">
+            <div class="layer">
+              <h3>Password - Reset</h3>
+              <p>Securely manage your accounts with features like Register, Login, and Password Reset, all built with
+                React, Node, Express, and MongoDB.</p>
+              <a href="https://reset-password-nodejs.netlify.app/"><i style="color: #ff004f; font-size: 18px; text-align: center;"
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="project" id="second">
+            <img src="./assets/project2.png" alt="">
+            <div class="layer">
+              <h3>Url Shortener</h3>
+              <p>Transform long, unwieldy URLs into sleek, memorable links with ease, making sharing and remembering a
+                breeze.</p>
+              <a href="https://task-url-shortener-frontend.netlify.app/"><i style="color: #ff004f; font-size: 18px; text-align: center;"
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="project" id="third">
+            <img src="./assets/project3.png" alt="">
+            <div class="layer">
+              <h3>Restaurant Reservation</h3>
+              <p>Book your next dining experience effortlessly and share your reviews to help others find the best
+                spots.</p>
+              <a href="https://task-restaurant-reservation.netlify.app/"><i style="color: #ff004f; font-size: 18px; text-align: center;"
+                  class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="btn" id="button">See More</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 style="margin-bottom: 20px;">Contact Me</h2>
+          <p class="email"><i class="fas fa-paper-plane"></i> jitendermaruthu2004@gmail.com</p>
+          <p class="phone"><i class="fas fa-phone-square-alt"></i> +91 6383561947</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100026455034055"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mr_jk_004_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/MR-JK004"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jitender-kumar-m-0204b9251/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" required>
+            <p>Enter Your Name</p>
+            <input type="email" name="Email" required>
+            <p>Enter Your Email</p>
+            <div class="textarea-wrapper">
+              <textarea id="message" name="Message" rows="4" required></textarea>
+              <label for="message">Leave Your Message</label>
+            </div>
+            <button type="submit" class="btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2024 Jitender Kumar M</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      function smoothScroll(target, duration, offset = 0) {
+        const targetElement = document.querySelector(target);
+        if (!targetElement) return; 
+
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const scrollAmount = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, scrollAmount);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function easeInOutCubic(t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return c / 2 * t * t * t + b;
+          t -= 2;
+          return c / 2 * (t * t * t + 2) + b;
+        }
+
+        requestAnimationFrame(animation);
+      }
+
+      document.querySelectorAll('nav.fixed-icons a').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = e.target.closest('a').getAttribute('href');
+          const offset = 200;
+          smoothScroll(targetId, 1000, offset);
+        });
+      });
+
+      const tabLinks = document.querySelectorAll('.tab-links');
+      const tabContents = document.querySelectorAll('.tab-contents');
+
+      tabLinks.forEach((link, index) => {
+        link.addEventListener('click', () => {
+          tabLinks.forEach(tab => tab.classList.remove('active-link'));
+          tabContents.forEach(content => content.classList.remove('active-tab'));
+
+          link.classList.add('active-link');
+          tabContents[index].classList.add('active-tab');
+        });
+      });
+    });
+
+
+    document.querySelectorAll('nav.fixed-icons a').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.closest('a').getAttribute('href');
+        smoothScroll(targetId, 1000);
+      });
+    });
+
+    const tabLinks = document.querySelectorAll('.tab-links');
+    const tabContents = document.querySelectorAll('.tab-contents');
+
+    tabLinks.forEach((link, index) => {
+      link.addEventListener('click', () => {
+        tabLinks.forEach(tab => tab.classList.remove('active-link'));
+        tabContents.forEach(content => content.classList.remove('active-tab'));
+
+        link.classList.add('active-link');
+        tabContents[index].classList.add('active-tab');
+      });
+    });
+    
+  </script>
+
+</body>
+
+</html>
