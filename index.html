@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="poppins-light">
+  <nav class="fixed-icons">
+    <ul>
+      <div class="icon-box">
+        <li><a href="#home"><i class="fas fa-home" data-text="HOME"></i></a></li>
+        <li><a href="#about"><i class="fas fa-laptop-code" data-text="SKILLS"></i></a></li>
+        <li><a href="#project"><i class="fas fa-network-wired" data-text="PROJECTS"></i></a></li>
+        <li><a href="#achievements"><i class="fas fa-graduation-cap" data-text="ACHIEVEMENTS"></i></a></li>
+        <li><a href="#contact"><i class="fas fa-envelope" data-text="CONTACT"></i></a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <header>
+    <p class="header-title">Unleashing Innovation: A Full Stack Tale of Code and Creativity</p>
+  </header>
+
+  <section id="home">
+    <div class="name">
+      <p id="role">Full Stack Developer</p>
+      <p id="intro"><span class="intro-text">Hello, I'm</span></p>
+      <div class="typewriter-container">
+        <p class="typewriter">Jitender Kumar M</p>
+      </div>
+    </div>
+    <div class="image">
+      <img class="circular-image" src="profile.jpg" alt="Profile Picture">
+    </div>
+    <a href="Jitender Kumar M_Resume.pdf" class="download-resume" download="Jitender_Kumar_Resume.pdf">Download
+      Resume</a>
+  </section>
+
+  <section class="stats">
+    <div class="stat">
+      <span class="number" data-target="0">0</span>
+      <p>Years of experience</p>
+    </div>
+    <div class="stat">
+      <span class="number" data-target="5">0</span>
+      <p>No Of Projects</p>
+    </div>
+    <div class="stat" style="position: relative;top: 25px;">
+      <span class="number" data-target="74">0</span>
+      <p>Problems Solved</p>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <h2 class="skill-title">Skills and Technologies</h2>
+    <div class="skills-box" id="skills-box">
+    </div>
+  </section>
+
+
+  <div class="portfolio" id="project">
+    <h2 class="my-projects">My Projects</h2>
+    <div class="project">
+      <div class="project-info">
+        <h2></h2>
+        <h1></h1>
+        <p></p>
+        <p class="tech-stack"></p>
+        <div class="project-links">
+          <div class="circle">
+            <a data-tooltip="Live project" href="" class="live-link" target="_blank">
+              <i style="color: white; font-size: 30px; text-align: center;" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <div class="circle2" style="position: relative; left: 20px;">
+            <a href="" class="github-link" data-tooltip="Source Code" target="_blank">
+              <i class="fab fa-github" style="color: white; font-size: 40px; text-align: center; position: relative; margin: 5px;"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-image">
+        <img src="./assets/project1.png" alt="Project Image">
+      </div>
+    </div>
+    <div class="navigation-arrows">
+      <button class="prev" onclick="showPrevProject()">&#8592;</button>
+      <button class="next" onclick="showNextProject()">&#8594;</button>
+    </div>
+  </div>
+  
+
+  <div class="certifications-section" id="achievements">
+    <h2>My Achievements</h2>
+    <div class="certifications-carousel" id="certificationsCarousel">
+        
+    </div>
+  </div>
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h2 style="margin-bottom: 20px;">Contact Me</h2>
+          <p class="email"><i class="fas fa-paper-plane"></i> jitendermaruthu2004@gmail.com</p>
+          <p class="phone"><i class="fas fa-phone-square-alt"></i> +91 6383561947</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100026455034055"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/mr_jk_004_/"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/MR-JK004"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jitender-kumar-m-0204b9251/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <div class="container">
+            <h2 class="text-center mt-5">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn2">Submit</button>
+            </form>
+        </div>     
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2024 Jitender Kumar M</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      function smoothScroll(target, duration, offset = 0) {
+        const targetElement = document.querySelector(target);
+        if (!targetElement) return;
+
+        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        function animation(currentTime) {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const scrollAmount = easeInOutCubic(timeElapsed, startPosition, distance, duration);
+          window.scrollTo(0, scrollAmount);
+          if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        function easeInOutCubic(t, b, c, d) {
+          t /= d / 2;
+          if (t < 1) return c / 2 * t * t * t + b;
+          t -= 2;
+          return c / 2 * (t * t * t + 2) + b;
+        }
+
+        requestAnimationFrame(animation);
+      }
+
+      document.querySelectorAll('nav.fixed-icons a').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = e.target.closest('a').getAttribute('href');
+          const offset = 200;
+          smoothScroll(targetId, 1000, offset);
+        });
+      });
+
+      const tabLinks = document.querySelectorAll('.tab-links');
+      const tabContents = document.querySelectorAll('.tab-contents');
+
+      tabLinks.forEach((link, index) => {
+        link.addEventListener('click', () => {
+          tabLinks.forEach(tab => tab.classList.remove('active-link'));
+          tabContents.forEach(content => content.classList.remove('active-tab'));
+
+          link.classList.add('active-link');
+          tabContents[index].classList.add('active-tab');
+        });
+      });
+    });
+
+
+    document.querySelectorAll('nav.fixed-icons a').forEach(anchor => {
+      anchor.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.closest('a').getAttribute('href');
+        smoothScroll(targetId, 1000);
+      });
+    });
+
+
+    const projects = [
+    {
+        id: 1,
+        title: "Restaurant Reservation",
+        description: "The Restaurant Reservation System is a full-stack application for effortless booking, modification, and cancellation of reservations. Users can filter options by availability, cuisine, location, and price, while a recommendation engine suggests tailored dining experiences. An admin panel enables restaurant owners to manage listings and reservations efficiently.",
+        techStack: "ReactJS, MongoDB, ExpressJS, Node JS",
+        imgSrc: "./assets/project1.png",
+        projectLink: "https://task-restaurant-reservation.netlify.app/",
+        githubLink: "https://github.com/MR-JK004/restaurant-reservation"
+    },
+    {
+        id: 2,
+        title: "URL Shortener",
+        description: "The URL Shortener is a full-stack application that allows users to easily shorten long URLs. Users can view a list of their shortened links and track statistics, including the number of URLs shortened today and this month. The intuitive interface ensures a smooth user experience, making it simple to manage and access shortened links.",
+        techStack: "React JS , Express JS , MongoDB , Bootstrap",
+        imgSrc: "./assets/project2.png",
+        projectLink: "https://task-url-shortener-frontend.netlify.app/",
+        githubLink: "https://github.com/MR-JK004/url-shortener-frontend"
+    },
+    {
+        id: 3,
+        title: "Password Reset",
+        description: "The Password Reset System is a secure application featuring user login, signup, and password recovery functionalities. Users can initiate a password reset by receiving a token via email for verification, ensuring a safe process for managing credentials. The system prioritizes security and user experience, making it easy to navigate.",
+        techStack: "React JS , Express JS , MongoDB , Bootstrap",
+        imgSrc: "./assets/project3.png",
+        projectLink: "https://reset-password-nodejs.netlify.app/",
+        githubLink: "https://github.com/MR-JK004/password-reset"
+    }
+];
+
+let currentIndex = 0;
+
+function showProject(index) {
+    const project = projects[index];
+
+  
+    document.querySelector('.project-info h2').textContent = String(project.id).padStart(2, '0');
+    document.querySelector('.project-info h1').textContent = project.title;
+    document.querySelector('.project-info p').textContent = project.description;
+    document.querySelector('.tech-stack').textContent = project.techStack;
+    document.querySelector('.live-link').href = project.projectLink;
+    document.querySelector('.github-link').href = project.githubLink;
+
+    const projectImage = document.querySelector('.project-image img');
+
+  
+    projectImage.classList.remove('visible');
+
+  
+    setTimeout(() => {
+        projectImage.src = project.imgSrc; 
+        projectImage.classList.add('visible');
+    }, 500);
+}
+
+
+
+
+function showNextProject() {
+    currentIndex = (currentIndex + 1) % projects.length;
+    showProject(currentIndex);
+}
+
+function showPrevProject() {
+    currentIndex = (currentIndex - 1 + projects.length) % projects.length;
+    showProject(currentIndex);
+}
+
+showProject(currentIndex);
+
+const options = {
+    root: null,
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            entry.target.classList.remove('visible');
+        }
+    });
+}, options);
+
+document.querySelectorAll('.portfolio, .project').forEach((section) => {
+    observer.observe(section);
+});
+
+
+
+  </script>
+
+</body>
+
+</html>

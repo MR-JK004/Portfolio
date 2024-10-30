@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certifications</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #121212;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .certifications-section {
+            padding: 40px;
+            background-color: #121212;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: #00FF99;
+            text-shadow: 0px 0px 10px #00FF99;
+            margin-bottom: 20px;
+        }
+
+        /* Carousel Container */
+        .certifications-carousel {
+            display: flex;
+            gap: 40px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            scroll-snap-type: x mandatory;
+            padding: 20px;
+        }
+
+        .certifications-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .certifications-carousel::-webkit-scrollbar-thumb {
+            background-color: #00FF99;
+            border-radius: 10px;
+        }
+
+        /* Certification Card Styles */
+        .certification-card {
+            min-width: 300px;
+            max-width: 300px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            padding: 20px;
+            scroll-snap-align: center;
+            box-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .certification-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 255, 153, 0.7);
+        }
+
+        .certification-card h3 {
+            color: #00FF99;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            text-shadow: 0px 0px 6px #00FF99;
+        }
+
+        .certification-card p,
+        .certification-card span {
+            color: #c1c1c1;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        /* View Certificate Button */
+        .view-certificate-btn {
+            display: inline-block;
+            background-color: #00FF99;
+            color: #121212;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .view-certificate-btn:hover {
+            background-color: #00cc7a;
+            box-shadow: 0px 0px 8px #00FF99;
+        }
+    </style>
+</head>
+<body>
+
+<div class="certifications-section">
+    <h2 class="section-title">My Certifications</h2>
+    <div class="certifications-carousel" id="certificationsCarousel">
+        <!-- Dynamic certificates will be inserted here -->
+    </div>
+</div>
+
+<script>
+    // Array of certifications
+    const certificates = [
+        { title: "MERN Full Stack Development", issuer: "Guvi", date: "Feb 2024 - Jun 2024", link: "#" },
+        { title: "Smart India Hackathon 2024 Participant", issuer: "National Level Hackathon", date: "2024", link: "#" },
+        { title: "JavaScript Basics", issuer: "Online Course Completion", date: "2023", link: "#" },
+        { title: "Data Science Essentials", issuer: "Coursera", date: "2023", link: "#" },
+        { title: "React Advanced", issuer: "Udemy", date: "2022", link: "#" },
+        { title: "Machine Learning Basics", issuer: "Stanford Online", date: "2023", link: "#" }
+    ];
+
+    const carousel = document.getElementById('certificationsCarousel');
+
+    // Render certifications dynamically
+    function renderCertificates() {
+        certificates.forEach(cert => {
+            const certCard = document.createElement('div');
+            certCard.classList.add('certification-card');
+            certCard.innerHTML = `
+                <h3>${cert.title}</h3>
+                <p>${cert.issuer}</p>
+                <span>${cert.date}</span>
+                <a href="${cert.link}" class="view-certificate-btn">View Certificate</a>
+            `;
+            carousel.appendChild(certCard);
+        });
+    }
+
+    function autoScroll() {
+    const scrollAmount = 1; // Amount to scroll each interval
+    const scrollSpeed = 30; // Milliseconds between scroll updates
+    let isScrolling = true;
+
+    const scrollInterval = setInterval(() => {
+        if (isScrolling) {
+            carousel.scrollLeft += scrollAmount;
+
+            // Reset to the start if we reach the end
+            if (carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth) {
+                carousel.scrollLeft = 0; // Reset scroll to the beginning
+            }
+        }
+    }, scrollSpeed);
+
+    // Pause scrolling on hover
+    carousel.addEventListener('mouseenter', () => isScrolling = false);
+    carousel.addEventListener('mouseleave', () => isScrolling = true);
+}
+
+
+    renderCertificates();
+    autoScroll();
+</script>
+
+</body>
+</html>

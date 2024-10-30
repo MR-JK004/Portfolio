@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery-smooth-scroll": "^2.2.0",
+    "locomotive-scroll": "^4.1.4"
+  }
+}
