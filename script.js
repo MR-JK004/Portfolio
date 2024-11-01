@@ -180,31 +180,6 @@ document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const fixedIcons = document.querySelector('.fixed-icons');
-  const footer = document.querySelector('footer'); // Ensure you have a footer element
-
-  function adjustIconsPosition() {
-      const footerRect = footer.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-
-      if (footerRect.top < windowHeight && footerRect.top > 0) {
-          // If the footer is visible
-          fixedIcons.style.top = `${Math.max(footerRect.top + window.scrollY - fixedIcons.offsetHeight, 0)}px`;
-      } else {
-          // Reset to original position or a default value
-          fixedIcons.style.top = '81%'; // Or your desired default value
-      }
-  }
-
-  // Listen for scroll and resize events
-  window.addEventListener('scroll', adjustIconsPosition);
-  window.addEventListener('resize', adjustIconsPosition);
-
-  // Initial adjustment
-  adjustIconsPosition();
-});
-
 
 
 const skills = [

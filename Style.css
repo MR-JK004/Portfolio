@@ -87,7 +87,7 @@ header {
     position: relative;
     bottom: 15px;
     white-space: nowrap;
-    color: rgb(246, 46, 46);
+    color: #00FF99;
     letter-spacing: 1px;
     font-weight: 700;
     margin-left: -15px;
@@ -114,7 +114,7 @@ header {
 /* Download Resume Button */
 
 .download-resume {
-    border: 1px solid rgb(246, 46, 46) !important;
+    border: 1px solid #00FF99 !important;
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -132,9 +132,11 @@ header {
 }
 
 .download-resume:hover {
-    background-color: rgb(246, 46, 46);
+    background-color: #00FF99;
     transform: scale(1.05);
+    color: black;
 }
+
 
 #role, #intro, .circular-image, .download-resume, .typewriter {
     opacity: 0; 
@@ -515,7 +517,7 @@ i[data-text]::after {
 }
 
 .contact-left p i {
-    color: rgb(246, 46, 46);
+    color: #00FF99;
     margin-right: 15px;
     position: relative;
     top: 5px;
@@ -542,23 +544,24 @@ i[data-text]::after {
 }
 
 .social-icons a:hover {
-    color: rgb(246, 46, 46);
+    color: #00FF99;
     transform: translateY(-5px) !important;
 }
 
 .btn2 {
-    background: rgb(246, 46, 46);
-    color: white;
+    background: #00FF99;
+    color: black;
     padding: 15px 40px;
     border-radius: 8px;
     font-size: 16px;
     transition: transform 0.3s;
+    letter-spacing: 2px;
 }
 
 .btn2:hover {
     cursor: pointer;
     transform: scale(1.1);
-    background: rgb(255, 0, 0);
+    background: #00d681;
 }
 
 .contact-right form {
@@ -600,11 +603,11 @@ textarea {
 }
 
 textarea:focus {
-    border-color: rgb(246, 46, 46);
+    border-color: #00FF99;
 }
 
 input:focus{
-    border-color: rgb(246, 46, 46);
+    border-color: #00FF99;
 }
 
 .textarea-wrapper {
@@ -983,6 +986,9 @@ footer {
 }
 
 @media(max-width:978px) {
+    .fixed-icons{
+        display: none;
+    }
     a.download-resume{
         font-size: 13px;
     }
@@ -1026,6 +1032,18 @@ footer {
         position: fixed;
         width: fit-content;
         left: 30%;
+    }
+
+    .contact-left i{
+        font-size: 15px !important;
+    }
+
+    .contact-left p{
+        font-size: 10px !important;
+    }
+
+    #contact i{
+        font-size: 18px;
     }
     
 
@@ -1272,6 +1290,10 @@ footer {
     .contact-right input:focus+p {
         position: relative;
         transform: translateY(-20px);
+    }
+
+    .contact-left p{
+        font-size: 15px !important;
     }
 }
 
